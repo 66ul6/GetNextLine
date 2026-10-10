@@ -1,7 +1,7 @@
 #include "get_next_line.h"
 
 char	*read_to_stash(int fd, char *stash)
-
+{
 	char	*buffer;
 	int		bytes_read;
 
