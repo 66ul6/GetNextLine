@@ -5,6 +5,11 @@
 # define BUFFER_SIZE 67
 #endif
 
+#if BUFFER_SIZE <= 0
+# undef BUFFER_SIZE
+# define BUFFER_SIZE 0
+#endif
+
 # include <stdlib.h>
 # include <unistd.h>
 
